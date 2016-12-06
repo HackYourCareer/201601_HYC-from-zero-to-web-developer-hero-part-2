@@ -1,0 +1,624 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Web Development</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-background-image="lib/repeatable_pattern_background.jpg">
+          <section>
+            <img style="width:14%; border:none; background:transparent" src="lib/html5.png" />
+            <img style="width:10%; border:none; background:transparent" src="lib/css3.png" />
+            <img style="width:12%; border:none; background:transparent" src="lib/js-logo.png" />
+            <img style="width:15%; border:none; background:transparent" src="lib/reactjs.png" />
+            <img style="width:20%; border:none; background:transparent" src="lib/nodejs-512.png" />
+            <br/><br/><br/>
+            <h2>Web Development</h2>
+            <br/>
+            <p style="font-size:30px"><i><a>"From zero to web developer hero"</a></i></p>
+          </section>
+
+          <section>
+            <img style="width:60%; border:none; background:transparent" src="lib/sap-hybris-logo.png" /><br/><br/>
+            <center>
+              <h3>Hack Your Career</h3><br/>
+              <img style="width:8%; border:none; background:transparent" src="lib/square-facebook-512.png" /> <a style="color:#3b5998">Hack.your.Career</a>
+            </center>
+          </section>
+
+          <section>
+            <h2>Web Developement Schedule</h2>
+            <ul class="unordered-list">
+              <li><s>From zero to Web Developer Hero - part 1</s></li><br/>
+              <li>From zero to Web Developer Hero - part 2</li><br/>
+            </ul>
+          </section>
+        </section>
+
+        <section data-background-image="lib/repeatable_pattern_background.jpg">
+          <section>
+            <h3>ReactJS – How to get rich in the near future?</h3>
+            <img height="355" width="500" src="lib/img/blackReactjs.png" />
+            <div class="authors-footer" style="font-size:30px">
+              <p>Mariusz Jasiński</p>
+            </div>
+          </section>
+
+          <section>
+            <h3> Agenda </h3>
+            <ul>
+              <li class="fragment fade-up"> Short story about Web Development.. Why we need ReactJS? Why Endrju decided to go for it ?! </li>
+					  	<p><li class="fragment">ReactJS Basics...</span> <span class="fragment">JSX...</span> <span class="fragment">lifecycle methods...</span> <span class="fragment">rendering...</span> <span class="fragment">and many more.</li></p>
+              <li class="fragment"> Few worlds about state management... <span class="fragment">Redux...?</span>  <span class="fragment"> ...MOBX?</span></li>
+              <li class="fragment"> Live Demo - (Un)Naked Image Slider</li>
+              <li class="fragment"> What's next?</li>
+              <li class="fragment"> Q&A </li>
+            </ul>
+          </section>
+        </section>
+        <section data-background-image="lib/repeatable_pattern_background.jpg">
+          <section>
+            <h3> Story of Web Development</h3>
+            <p class="fragment"> Old brothers..</p>
+            <ul>
+              <li class="fragment"> jQuery</li>
+              <li class="fragment"> Ajax </li>
+              <li class="fragment"> a lot of HTML code  </li>
+            </ul>
+          </section>
+          <section>
+            <h2> Potential problems? </h2>
+            <ul class="unordered-list">
+              <li class="fragment"> Unnecessary page reloads</li>
+              <li class="fragment"> A lot of code duplication</li>
+              <li class="fragment"> it simple doesn't scale</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Example</h2>
+            <img src="lib/img/transfer1.png"></img>
+            <img src="lib/img/transfer2.png"></img>
+
+          </section>
+          <section>
+            <h2> Solution? </h2>
+          </section>
+          <section>
+            <h3> SPA - Single Page Applications </h3>
+            
+          <blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						A single-page application (SPA) is a web application or web site that fits on a single web page with the goal of providing a user experience similar to that of a desktop application. 
+            In an SPA, either all necessary code – HTML, JavaScript, and CSS – is retrieved with a single page load
+					</blockquote>
+          </section>
+          <section>
+            <h2>Examples of JS SPA frameworks</h2>
+            <ul class="unordered-list">
+              <li> Angular (2010) </li>
+              <li> Backbone (2010) </li>
+              <li> Knockout (2010) </li>
+              <li> EmberJS (2011) </li>
+              <li> <b>ReactJS (2013) </b></li>
+              <li>.. and many more</li>
+
+              <a href="http://dayssincelastjavascriptframework.com/" class="fragment">Days Since Last Javascript Framework</a>
+
+            </ul>
+          </section>    
+          <section>
+            <h2> How to NOT GET lost?</h2>
+            <ul class="unordered-list"> 
+              <li>Dont try everything at once!</li>
+              <li>Pick the one that fascinates you the most</li>
+              <li>Stick with your choice and practice</li>
+            </ul>
+          </section> 
+      </section>
+
+      <section data-background-image="lib/repeatable_pattern_background.jpg">
+        <section>
+            <h2>ReactJS</h2>
+            <blockquote>
+						React is a JavaScript library for creating user interfaces by Facebook and Instagram. Many people choose to think of React as the V in MVC.
+We built React to solve one problem: building large applications with data that changes over time.
+					</blockquote>          
+          </section>
+          <section>
+            <h2>Who created ReactJS?</h2>
+            <img src="lib/img/lechW.jpg"></img>
+          </section>
+          <section>
+            <h2> Facebook - the Problem Solver </h2>
+            <ul class="unordered-list">
+              <li> Translator Hip Hop for PHP (HipHop Virtual Machine)</li>
+              <li> <b>ReactJS</b> </li>
+              <li> GraphQL </li>
+              <li> Jordan Walke – Software engineer at Facebook who created React.</li>
+              <li> Pete Hunt – extracted React from Facebook code to make it Open Source</li>
+            </ul>
+
+            
+          </section>
+
+          <section>
+            <h3> Almost ended my Hello World ReactJS application..</h3>
+            <img src="lib/img/pic.png"> </img>
+          </section>
+
+          <section>
+            <h2>ReactJS - core concepts</h2>
+            <ul class="unordered-list">
+              <li>Virtual DOM</li>
+              <li>One direction data flow</li>
+              <li>Components </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2> Virtual DOM <h2>
+          </section>
+                    
+          <section>
+            <h3> Nieogarnięta Katarzyna (DOM) </h3> <br> vs <br><br> <h3>Inteligentna Martyna (V-DOM)</h3>
+          </section>
+
+          <section>
+            <img src="lib/img/virtual.png" />
+          </section>
+          <section>
+            <h2>Virtual DOM implementations</h2>
+            <ul class="unordered-list">
+              <div> <a href="http://vdom-benchmark.github.io/vdom-benchmark/">http://vdom-benchmark.github.io/vdom-benchmark/</a></div>
+              <li>virtual-dom</li>
+              <li>React-lite</li>
+              <li>cito.js</li>
+              <li>...many others</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Benefits?</h2>
+            <ul class="unordered-list">
+              <li>Speed..</li>
+              <li>Speed..</li>
+              <li>Easier to test :) Why? Additional level of abstraction. </li>
+            </ul>
+          </section>
+
+          <section>
+            One direction data flow
+          </section>
+
+          <section>
+            Components
+          </section>
+
+          <section>
+            <pre><code>
+              class Welcome extends React.Component {
+                render() {
+                  return <h1>Hello, {this.props.name}</h1>;
+                }
+              }
+          </code></pre>
+          <pre><code>
+              function welcome({name}) => { 
+                return (
+                  <h1>Hello, {name}</h1>;
+                )
+              }
+          </code></pre>
+                    <div class="fragment"> <font color="green"> INFO! This is an example of "DUMB" component. What is the opposite? Find out :)</font></li>
+
+          </section>
+        </section>
+
+      </section>
+        <section data-background-image="lib/repeatable_pattern_background.jpg">
+
+          <section>
+            Rendering components and props/state
+          </section>
+          <aside class="notes">
+              in React its all about rendering... efficient rendering :) 
+          </aside>
+
+          <section>
+            <h2>Challenge</h2> 
+            <pre><code>
+                            this.props
+                                vs 
+                            this.state  
+            </code></pre>
+          </section>
+
+          <section>
+            <h2> Props </h2> 
+
+              <pre><code>
+              class Welcome extends React.Component {
+                render() {
+                  return <h1>Hello, {this.props.name}</h1>;
+                }
+              }
+          </code></pre>
+
+           <pre><code spellcheck="false">
+              render() {
+                <Welcome name="Mariusz Jasinski"> </Welcome>
+              }
+          </code></pre>
+          </section>
+
+          <section>
+            <h2>State</h2>
+            <pre><code>
+              class welcome extends React.Component {
+                constructor() { 
+                  this.state = { name: "Mariusz Jasinski"}
+                }
+
+                render() {
+                  return <h1>Hello, {this.state.name}</h1>;
+                }
+              }
+            </code></pre>
+
+            <pre><code>
+              render() {
+                <Welcome></Welcome>
+              }
+          </code></pre>
+          </section>
+
+          <section>
+<p data-height="754" data-theme-id="0" data-slug-hash="VmpRmN" data-default-tab="result" data-user="enfer" data-embed-version="2" data-pen-title="Hello World in React" class="codepen">See the Pen <a href="http://codepen.io/enfer/pen/VmpRmN/">Hello World in React</a> by Mariusz Jasiski (<a href="http://codepen.io/enfer">@enfer</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+          </section>
+
+          <section>
+            handlePropsChange
+            <pre><code>
+            handlePropsChange(e) {
+              this.props.propsText = "Karol Kowalski";
+              console.log("props", this.props.propsText); 
+              //logs Karol Kowalski, 
+              //but on screen nothing has changed!
+            }
+            (...)
+            <h1>props: {this.props.propsText}</h1>
+            //logs old value! : "propsText"
+            </code></pre>
+            <div class="fragment"><font color="red">Why? We've changed this.props. ReactJS doesnt care about that... :)</font></div>
+          </section>
+
+          <section>
+            handleStateChangeBad
+            <pre><code>
+            handleStateChangeBad(e) {
+              //Wrong!! Render function wont be executed! 
+              //Direct assign wont work.
+              this.state.text = "Karol Kowalski"; 
+              
+              console.log("state", this.state.text);
+              //Logs Karol Kowalski.. :)
+            }
+            (...)
+            <h1>state: {this.state.text} </h1>
+            //Mariusz Jasinski
+
+            </code></pre>
+            <div class="fragment"><font color="red">Why? We've changed this.state, but... direct assign to variable wont work.</font></div>
+
+          </section>
+
+          <section>
+            handleStateChangeGood
+            <pre><code>
+            handleStateChangeGood(e) {
+              //Everything is fine!
+              //this.setState has been used!
+              this.setState({text: "Mariusz Jasinski The Second"}) 
+              
+              console.log("state", this.state.text);
+              //logs Mariusz Jasinski The Second
+            }
+            (...)
+            <h1>state: {this.state.text} </h1>
+            //Mariusz Jasinski The Second
+            </code></pre>
+            <div class="fragment"><font color="green">Success! We've changed state and also we used this.setState for that!</font></div>
+
+          </section>
+
+
+          <section>
+            <h2> Conlusion? </h2>
+            <img src="lib/img/immutable.jpeg" />
+            </section>
+          <section>
+            <h2>Rules to follow</h2>
+            <ul class="unordered-list">
+              <li class="fragment">this.state has been changed..</li>
+              <li class="fragment"> this.setState has been used (no direct assign allowed).. so </li>
+              <li class="fragment"><font color="red"><s>this.state.variable = "Mariusz"</s>></font></li>
+              <li class="fragment"><font color="green">this.setState({variable: "Mariusz"})</font></li>
+            </ul>
+          </section>
+          <section>
+            <h2>Merging state</h2>
+
+            <pre><code>
+            class Welcome extends React.Component {
+              constructor(props) {
+                super(props);
+
+                this.state = {
+                  variable0: 'testValue'
+                };
+              }
+              componentDidMount() {
+                this.setState({
+                  variable1: 'testValue'
+                });
+                console.log(this.state)
+                //{ variable0: 'testValue', variable1: 'testValue'}
+              }
+              render() {}
+            }
+
+            </code></pre>
+          </section>
+          <section>
+            <h2>WHY?!</h2>
+             <ul class="unordered-list">
+              <div class="fragment"><font color="green">ReactJS promotes <b>immutability</b>. What does it mean?</font></li>
+            </ul>
+          </section>
+          <section>
+            <h2>ES6 Object.assign</h2>
+            <pre><code>
+              const elementToExtend = {
+                someProp: 'value'
+              }
+              Object.assign({}, elementToExtend, { newProp: val})
+            </pre></code>
+          </section>
+          <section>
+          <h2>Many other way to do the same! </h2>
+          <ul class="unordered-list">
+            <li class="fragment">ImmutableJS</li>
+            <li class="fragment">Lodash</li>
+            <li class="fragment">Underscore</li>
+            
+          </ul>
+          </section>
+          <section>
+            <h2> JSX </h2>
+            <pre><code>
+              const element = <h1>Hello, world!</h1>;
+              ......
+              render() { 
+                return (
+                  <jakisComponent> </jakiscomponent>
+                  <div> Jakis Tekst </div>
+                  {this.props.name}
+                )
+              }
+            </code></pre>
+          </section>
+
+          <section>
+            <h2> Conlusion? </h2>
+            <b>Its similar to template language (e.g handlebars) but it has a full power of Javascript :) </b> </br></br>
+          </section>
+
+          <section>
+            <h2>Lifecycle methods</h2>
+            <br/>
+            <ul class="unordered-list">
+              <li>constructor</li>
+              <li>componentWillMount</li>
+              <li><b>componentDidMount</b></li>
+              <li>componentWillReceiveProps</li>
+              <li>shouldComponentUpdate</li>
+              <li><b>componentWillUpdate </b>
+              <li><b>componentDidUpdate</b></li>
+              <li>componentWillUnmount</li>
+            </ul>
+            <aside class="notes">
+              Wspominamy tylko o ich istnieniu, nie umawiamy kazdego z osobna - tylko np. dwa przykladowe
+            </aside>
+          </section>
+          <section>
+            <h2>Example component</h2>
+            <pre><code>
+              class App extends Component {
+                componentDidMount() {}
+                componentWillUpadate() {}
+                //(...)
+                componentWillUnmount() {}
+                
+                render() {
+                  return (
+                    <div>Hello</div>
+                  );
+                }
+              }
+</code></pre>
+          </section>
+          <section>
+            <h3>componentWillUpdate </h3>
+            <ul class="unordered-list"> 
+              <li>before render</li>
+              <li>just after receiving new props or state </li> 
+              <li>not for initial render </li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>componentDidMount </h3>
+            <ul class="unordered-list"> 
+              <li>after component is mounted </li>
+              <li>before render</li> 
+              <li>good place to I/O operations</li>
+            </ul>
+          </section>
+
+           <section>
+            <h3>componentDidUpdate </h3>
+            <ul class="unordered-list"> 
+              <li>after render</li> 
+              <li>not for initial render </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Few words about state management... <h2>
+          </section>
+
+          <section>
+            <h2> What is state management?</h2>
+          </section>
+
+          <section>
+              <img src="lib/img/flux.png"></img>
+              <img src="lib/img/redux.png"></img>
+              <img src="lib/img/mobx.png"></img>
+          </section>
+
+          <section>
+              <h2>Choose wisely!</h2>
+              <ul class="unordered-list">
+                <li> What is your purpose? </li>
+                <li class="fragment"> Big application? </li>
+                <li class="fragment">Prototype?</li>
+               <blockquote class="fragment" cite="http://redux.js.org/">
+                “Love what you're doing with Redux”, <br>
+                  Jing Chen, creator of Flux
+					     </blockquote>
+             </ul>
+
+          </section>
+                  <section>
+          <h2>Prototype?</h2>
+              <ul class="unordered-list">
+
+            <li>url: <a href="https://mjasinski5.github.io/hackathon/">https://mjasinski5.github.io/hackathon/</a></li>
+            <li>source code: <a href="https://github.com/mjasinski5/hackathon"> https://github.com/mjasinski5/hackathon </a></li>
+              <div>ReactJS + MobX + NodeJS </div>
+            </ul>
+        </section>
+        </section>
+
+        <section data-background-image="lib/repeatable_pattern_background.jpg">
+          <section>
+            <h2>LIVE DEMO - (Un)Naked Image Slider</h2>
+          </section>
+        </section>
+      <section data-background-image="lib/repeatable_pattern_background.jpg">
+      <section>
+        <img src="lib/img/end.jpg"></img>
+      </section>
+      <section>
+        <h2>
+        Few numbers...  
+      </h2>
+      </section>
+      <section>
+        54k stars / 5 rank at Github
+      </section>
+      <section>
+        <img height="650" width="900" src="lib/img/trend.png"></img>
+      </section>
+      <section>
+        <img height="650" width="900" src="lib/img/trend2.png"></img>
+      </section>
+       <section>
+        <img height="auto" width="1000" src="lib/img/trend3.png"></img>
+      </section>
+      <section>
+        <h2> What's next? </h2>
+        <ul class="unordered-list">
+          <li><a href="https://github.com/facebookincubator/create-react-app">Create-react-app boilerplate</a></li>
+          <li><a href="https://facebook.github.io/react/docs/thinking-in-react.html"> Thinking in React</a></li>
+          <li><a href="https://facebook.github.io/react/docs/hello-world.html">ReactJS documentation</a></li>
+          <li><a href="http://redux.js.org/">Redux </a></li>
+          <li><a href="https://github.com/krasimir/react-in-patterns/blob/master/README.md"> React in Patterns </a>
+          <li><a href="https://facebook.github.io/react-native/">React Native</a></li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2>React Native - mobile development</h2>
+        <ul class="unordered-list">
+          <li>Facebook</li>
+          <li>Instageam</li>
+          <li>Airbnb</li>
+          <li>Discord</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Electron- desktop development</h2>
+        <ul class="unordered-list">
+          <li>Atom</li>
+          <li>Slack</li>
+          <li>Visual Code Studio</li>
+        </ul>
+      </section>
+      <section>
+        <h2>How cool is that ? :)</h2>
+        <div class="fragment">Learn once, write everywhere!</div>
+      </section>
+      <section>
+        <img src="lib/img/every.jpg"></img>
+      </section>
+      </section>
+      <section data-background-image="lib/repeatable_pattern_background.jpg">
+        <section>
+          <img src="lib/img/thank.jpg" />
+          <h2 class="fragment">Questions?</h2>
+        </section>
+      </section>
+      <section data-background-image="lib/repeatable_pattern_background.jpg">
+        <h2>Give us feedback!</h2>
+      </section>
+    </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
+</html>
